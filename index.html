@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1>Gerador de Senha</h1>
+        </section>
+
+        <section id="typeRangeContainer">
+            <input type="range" value="5" id="range" min="5" max="15"> 
+            <output id="rangeNumber">5</output>
+        </section>
+
+        <section id="checkboxContainer">
+            <div>
+                <input type="checkbox" id="lowercase">
+                <label for="lowercase">Letras Minúsculas</label>
+            </div>
+            <div>
+                <input type="checkbox" id="uppercase">
+                <label for="uppercase">Letras Maiúsculas</label>
+            </div>
+            <div>
+                <input type="checkbox" id="symbol">
+                <label for="symbol">Símbolos</label>
+            </div>
+            <div>
+                <input type="checkbox" id="number">
+                <label for="number">Números</label>
+            </div>
+        </section>
+
+        <section id="buttonContainer">
+            <button id="generate">Gerar</button>
+        </section>
+
+        <section id="passwordContainer">
+            <span id="generatedPassword"></span>
+        </section>
+
+        <section id="copiedContainer">
+            <span id="showPassword" class="showPassword">SUA SENHA FOI SALVADA!</span>
+        </section>
+
+    </main>
+    <script src="filterScript.js"></script>
+    <script src="copiedPassword.js"></script>
+</body>
+</html>
